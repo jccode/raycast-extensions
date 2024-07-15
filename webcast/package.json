@@ -9,8 +9,8 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "GameSearch",
+      "name": "get_game_by_appid",
+      "title": "Get Game By AppID",
       "description": "webcast extension",
       "mode": "view",
       "arguments": [
@@ -19,6 +19,21 @@
           "description": "Search by app_id",
           "type": "text",
           "placeholder": "app_id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "get_game_by_unified_gameid",
+      "title": "Get Game By Unified GameID",
+      "description": "webcast extension",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "gameID",
+          "description": "Search by gameID",
+          "type": "text",
+          "placeholder": "UnifiedGameID",
           "required": true
         }
       ]
